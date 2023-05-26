@@ -7,8 +7,30 @@ grey - #95a5a6;
 red - #ee5253 */
 
 body {
-    background-image: url("assets/burger-friends.jpg");
-    background-size: cover;
+    font-family: 'Roboto', sans-serif;  
 }
+
+.top-navigation  {
+    font-family: sans-serif;
+    font-size: 25px;
+    background: #0fb9b1;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+
+.add-recipe-button {
+    font-size: 15;
+    font-family: sans-serif;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border-radius: 8px;
+    padding: 13px;
+  }
+
 
 
