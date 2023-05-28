@@ -20,13 +20,14 @@ section {
     justify-content: center;
     padding: 50px;
     gap: 15%; 
+    
 }   
 
 .top-navigation-bar  {
     font-family: sans-serif;
     font-size: 30px;
     background: #0fb9b1;
-    height: 30px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,16 +36,6 @@ section {
 
 .asterisk{
     color:#ee5253;
-}
-
-.add-recipe-button {
-    font-size: 15;
-    font-family: sans-serif;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    border-radius: 8px;
-    padding: 13px;
 }
 
 h2 {
@@ -104,8 +95,8 @@ margin-left: 40px;
     }
 
 .cook-pot {
-width: 150px;
-height: 150px;
+width: 200px;
+height: 200px;
 }
 
 p { 
@@ -121,25 +112,23 @@ margin: 5px;
     background-color: #95a5a6;
     color: rgba(225, 225, 225);
     border-color: #95a5a6;
-    font-family:sans-serif;
     height: 60px;
     width: 130px;
     font-size: 20px;
     position: fixed;
     margin-top: 310px;
-    margin-left: 400px;
+    margin-left: 460px;
     border-radius: 5px;
 } 
 
 .food-suggestion {
-font-family:  sans-serif;
-font-size: 35px;
+font-family: sans-serif;
+font-size: 30px;
 display: flex;
-justify-content: center;
-align-items: center;
+justify-content: space-between;
 margin: 5px;
 }  
 
 .hidden {
-    display: none;
+    display: none
 } 
