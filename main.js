@@ -13,7 +13,7 @@ var sides = [
 var mains = [
     "Baconstein’s Monster",
     "Poultrygeist",
-    "Jaws",
+    "Jaws Burger",
     "The Exorswiss and Mushrooms",
     "The Van Helsing (garlic burger)",
     "The Hellraiser (jalapeno and habanero aioli)",
@@ -35,8 +35,6 @@ var mainRadioButton = document.querySelector("#main-dish");
 var dessertRadioButton = document.querySelector("#dessert");
 var entireMealRadioButton = document.querySelector("#entire-meal");
 var letscookButton = document.querySelector("#lets-cook-button");
-
-
 var cookPot = document.querySelector(".cook-pot");
 var clearButton = document.querySelector(".clear-button");
 var youShouldMake = document.querySelector(".you-should-make");
@@ -49,40 +47,41 @@ clearButton.addEventListener("click", clearDish);
 
 
 //functions:
-
 function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
 }
 
 function getRandomDish() {
-    if (sideRadioButton.checked) {
-        foodSuggestion.innerHTML = sides[getRandomIndex(sides)]
+    if (entireMealRadioButton.checked) {
+      var side = sides[getRandomIndex(sides)];
+      var main = mains[getRandomIndex(mains)];
+      var dessert = desserts[getRandomIndex(desserts)];
+      foodSuggestion.innerHTML = `${main}<br>with a side of ${side} and<br> ${dessert} <br>for dessert!`;
+    } else if (sideRadioButton.checked) {
+      foodSuggestion.innerHTML = sides[getRandomIndex(sides)];
     } else if (mainRadioButton.checked) {
-        foodSuggestion.innerHTML = mains[getRandomIndex(mains)]
+      foodSuggestion.innerHTML = mains[getRandomIndex(mains)];
     } else if (dessertRadioButton.checked) {
-        foodSuggestion.innerHTML = desserts[getRandomIndex(desserts)]
-        
+      foodSuggestion.innerHTML = desserts[getRandomIndex(desserts)];
     }
-    return foodSuggestion
+    return foodSuggestion;
 }
 
 function displayDish() {
     cookPot.classList.add("hidden");
-    foodSuggestion.classList.remove("hidden");
-    youShouldMake.classList.add("hidden");
-    getRandomDish();
-  }
-
+    youShouldMake.classList.remove("hidden");
+    
+    if (entireMealRadioButton.checked || sideRadioButton.checked || mainRadioButton.checked || dessertRadioButton.checked) {
+        foodSuggestion.classList.remove("hidden");
+        getRandomDish();
+    } else {
+        foodSuggestion.classList.add("hidden");
+    }
+}
 
   function clearDish() {
     foodSuggestion.innerHTML = "";
     foodSuggestion.classList.add("hidden");
     cookPot.classList.remove("hidden");
-  }
-
-
-  //   function clearDish() {
-//     youShouldMake.innerHTML = ""; 
-//     foodSuggestion.classList.add("hidden");
-//     cookPot.classList.remove("hidden");
-//   }
+    clearButton.classList.remove("hidden");
+}
