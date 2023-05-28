@@ -1,10 +1,10 @@
-/* font-family: 'Roboto', sans-serif; */
-
+/* font-family: 'Roboto', sans-serif;
 /* COLORS
 teal - #0fb9b1;
 frosted white - rgba(225, 225, 225, .9);
 grey - #95a5a6;
 red - #ee5253 */
+/*  */
 
 body {
     background-size: cover;
@@ -56,7 +56,6 @@ align-items: center;
 margin: 5px;
 }
 
-
 .left-container {
 background: rgba(255, 255, 255, 0.8);
 width: 700px;
@@ -68,12 +67,18 @@ align-items: flex-start;
 justify-content: flex-start ;
 }
 
-p {
-font-size: 25px ;
- margin: 15px
+ul {
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-.lets-cook-button {
+li {
+    margin: 15px; 
+}
+
+#lets-cook-button {
 background: #0fb9b1;  
 font-family: sans-serif;
 font-size: 20px;
@@ -84,6 +89,7 @@ align-items: center ;
 justify-content: center;
 border-radius: 5px;
 margin: 15px;
+margin-left: 40px;
 }
 
 .right-container {
@@ -97,10 +103,43 @@ margin: 15px;
     justify-content: center;
     }
 
-.img-pot {
-    width: 150px;
-    height: 150px;
-    }
-    
-    
+.cook-pot {
+width: 150px;
+height: 150px;
+}
 
+p { 
+font-family:  sans-serif;
+font-size: 35px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 5px;
+}
+
+.clear-button {
+    background-color: #95a5a6;
+    color: rgba(225, 225, 225);
+    border-color: #95a5a6;
+    font-family:sans-serif;
+    height: 60px;
+    width: 130px;
+    font-size: 20px;
+    position: fixed;
+    margin-top: 310px;
+    margin-left: 400px;
+    border-radius: 5px;
+} 
+
+.food-suggestion {
+font-family:  sans-serif;
+font-size: 35px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 5px;
+}  
+
+.hidden {
+    display: none;
+} 
