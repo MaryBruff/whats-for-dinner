@@ -1,34 +1,32 @@
 <html>
   <head>
     <link rel="stylesheet" href="./styles.css" />
-    <link href="link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />  
     <title>What's For Dinner?</title>
   </head>
   <body>
-  <nav class="top-navigation-bar">
-    <h1>What's for Dinner?</h1>
-    <button type="button" name="add-recipe-button" class="add-recipe-button"> ADD A RECIPE</button>
-</nav>
-<section>
-  <article class="left-container">
-  <h2 class="left-header">What are you looking for?<span class="asterisk">*</span></h2>  
-  <p> <input class="side" id="side" type="radio" name="dinner" value="Side"></input>
-    <label for="Side">Side</label> </p> <p> <input class="main dish" id="main dish" type="radio" name="dinner" value="main dish"></input>
-    <label for="Main Dish">Main Dish</label></p>
-  <p> <input class="dessert" id="dessert" type="radio" name="dessert" value="dessert"></input>
-    <label for="Dessert">Dessert</label></p>
-<p><input class="entire meal" id="entire meal" type="radio" name="entire meal" value="entire meal"></input>
-    <label for="Entire Meal">Entire Meal</label> </p>
-  <button type="button" name="lets-cook-button" class="lets-cook-button"> Let's Cook!</button>
-  </article>
-<article class="right-container">
-
-</body>
-
-<div>
-  <img class="img-pot" src="assets/cookpot.svg">
-  </div>
-
-</section>
-  <script type="text/javascript" src="main.js"></script>
+    <nav class="top-navigation-bar">
+      <h1>What's for Dinner?</h1>
+      <button name="add-recipe-button">ADD A RECIPE</button>
+    </nav>
+    <section>
+      <article class="left-container">
+        <h2 class="left-header">What are you looking for?<span class="asterisk">*</span></h2>  
+        <ul class="radio-buttons" style="list-style-type:none">
+          <li><input type="radio" name="Recipes" id="side" value="side">Side</li>
+          <li><input type="radio" name="Recipes" id="main-dish" value="main-dish">Main Dish</li>
+          <li><input type="radio" name="Recipes" id="dessert" value="dessert">Dessert</li>
+          <li><input type="radio" name="Recipes" id="entire-meal" value="entire meal">Entire Meal</li>
+        </ul> 
+        <button id="lets-cook-button">Let's Cook!</button>
+      </article>  
+      <article class="right-container">
+        <h3 class="food-suggestion hidden">You Should Make!</h3>
+        <p class="food-suggestion"></p>
+        <img class="cook-pot" src="assets/cookpot.svg" alt="black clipart pot">
+        <button class="clear-button hidden">Clear</button>
+      </article>
+    </section>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
 </html>
