@@ -1,51 +1,38 @@
-# What's for Dinner?
-
-## Overview
-
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
-
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
-
-The spec for this project can be found [here](https://frontend.turing.edu/projects/module-1/dinner.html). 
-
-## Learning Goals
-
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
-
-## Setup
-
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
-
-______________________________________________________  
-# README Template  
-Before turning this project in, erase this line and everything above it and fill in the info below.  
-______________________________________________________  
-
 # What's for Dinner? 
 
 ### Abstract:
-[//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
+Created to simplify the process of choosing what to have for dinner. This app offers a wide range of recipe options tailored to individuals who have a preference for spooky-themed meals. By generating random meal ideas from a selection of side dishes, main dishes, desserts, or entire meals, our app sparks inspiration and encourages culinary creativity. Developed using HTML, CSS, and JS, the app was designed with simplicity in mind. 
 
 ### Installation Instructions:
-[//]: <> (What steps does a person have to take to get your app cloned down and running?)
+* Fork this project to your own Github account
+* Clone the repository to your local machine
+* cd into the project
+* Read this README thoroughly, then begin working!
 
 ### Preview of App:
-[//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
+![App 1](https://user-images.githubusercontent.com/128327004/241600044-fddb6078-4231-4f6c-b279-b23c1e4295eb.png)
+![App 2](https://user-images.githubusercontent.com/128327004/241600081-22ea3f06-ec19-4a63-8aa2-1f6f2b5448b5.png)
 
 ### Context:
-[//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
+This project was assigned in the third week of Module 1 at the Turing School of Software and Design. The application took 5 days to complete, though two days of those days were primarily spent practicing Javascript for a Mid Mod assessment. 
+
 
 ### Contributors:
-[//]: <> (Who worked on this application? Link to their GitHubs.)
+Built solo by Mary Bruff https://github.com/MaryBruff
 
 ### Learning Goals:
-[//]: <> (What were the learning goals of this project? What tech did you work with?)
+* Gain experience building an application that utilizes HTML, CSS and JavaScript
+* Write HTML and CSS to match a provided comp
+* Understand how to listen to and respond to user events
+* Individualize your programming skill set
 
 ### Wins + Challenges:
-[//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+Wins:
+* Using tools like Code Pen to tweak and experiment with HTML and CSS. I found this especially helpful when I was conceptualizing and brainstorming in the beginning!
+* Getting into a netter git workflow! I was unable to fully embrace the new process for my last project, but this time I think I got the hang of it! 
+* Connecting HTML, CSS, and JS into one application is pretty amazing! I am proud of the JS I was able to apply but I know it still needs work! 
+
+Challenges:
+* Planning and execution. I drew out my layout on paper and then tried to apply it in Code Pen, but once I got into the file I would hyperfocus on small details. I spent more time trying to perfect certain aspects that I lost sight of other functions that needed to be executed. 
+* Not giving myself enough time to troubleshoot. I think I overcomplicated my HTML and CSS and therefore didn't give myself enough time to work with my JS. 
+* Not getting the clear button and "You Should Make" text hide when they were supposed. I think the solution is in my code but like I said, I did not give myself enough time to troubleshoot this error. 
